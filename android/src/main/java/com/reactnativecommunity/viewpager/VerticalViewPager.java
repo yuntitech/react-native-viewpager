@@ -40,7 +40,7 @@ public class VerticalViewPager extends ViewPager {
      */
     @Override
     public boolean canScrollHorizontally(int direction) {
-        return !canScrollVertically(direction);
+        return !mVertical && super.canScrollHorizontally(direction);
     }
 
     /**
